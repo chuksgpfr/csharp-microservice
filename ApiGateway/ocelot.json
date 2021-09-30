@@ -1,0 +1,55 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownStreamPathTemplate": "/api/create/{everything}",
+      "DownStreamScheme": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14818"
+        }
+      ],
+      "UpstreamPathTemplate": "/create/{everything}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/read/{everything}",
+      "DownStreamScheme": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "18030"
+        }
+      ],
+      "UpstreamPathTemplate": "/read/{everything}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/delete/{everything}",
+      "DownStreamScheme": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "17288"
+        }
+      ],
+      "UpstreamPathTemplate": "/delete/{everything}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/update/{everything}",
+      "DownStreamScheme": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "28584"
+        }
+      ],
+      "UpstreamPathTemplate": "/update/{everything}",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:10930"
+  }
+}
